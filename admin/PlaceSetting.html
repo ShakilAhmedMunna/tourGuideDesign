@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tour</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/admin.css" rel="stylesheet">
+	
+	   <!-- Custom Fonts -->
+    <link href="../shakil/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  </head>
+	
+
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                       Tour Guide
+                    </a>
+                </li>
+                <li>
+                    <a href="post.html">Dashboard</a>
+                </li>
+                
+                <li>
+                    <a href="PlaceSetting.html">Place Setting </a>
+                </li>
+                <li>
+                     <a href="viewpost.html">Data View </a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+				<li>
+                    <a href="adminlogin.html">Log out</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <a href="#menu-toggle" class="btn btn-primary" id="menu-toggle">Menu</a>
+						
+                    </div>
+                </div>
+				<!-- row end -->
+				
+				 <div class="container">			 
+					<div class="row main-bolck-setting"> 	
+								
+								<h1 class="text-center"> Place Setting </h1>
+								<hr /> <br />
+						<div class="col-md-4"> 
+							
+							 <form>
+							  <div class="form-group">
+								<label for="exampleInputEmail1">Country</label>
+								<input type="text" class="form-control input-sm" id="" placeholder="Country">
+							</div>
+							 
+							<button type="button"  class="btn btn-primary btn-sm"> Save  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+							
+							<br /> 
+							<hr />
+								<table class="table table-hover">
+										<!-- On table  -->
+										<tr class=".table-condensed">
+										  <td class="danger">Country Name </td>
+										  
+										  <td class="danger">Edit</td>
+										  
+										  <td class="danger">Delete</td>
+										</tr>
+										
+										<tr>
+										  <td class="active">Bangladesh</td>
+										  
+										  <td class="active"><button type="button"  class="btn btn-warning btn-sm col-md-offset-1" data-toggle="modal" data-target="#counter-edit" data-whatever="@mdo"> Edit  <span class="glyphicon glyphicon-cog" aria-hidden="true"></span></button></td>
+										  <td class="active"><button type="button"  class="btn btn-danger btn-sm col-md-offset-1">Delete  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
+										</tr>								
+								</table>
+							
+							
+							
+							
+								
+								<div class="modal fade" id="counter-edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+								  <div class="modal-dialog" role="document">
+									<div class="modal-content">
+									  <div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="exampleModalLabel">Edit Here</h4>
+									  </div>
+									  <div class="modal-body">
+										<form>
+										  <div class="form-group">
+											<label for="recipient-name" class="control-label">Country :</label>
+											<input type="text" class="form-control" id="Country-name">
+										  </div>
+										  
+										</form>
+									  </div>
+									  <div class="modal-footer">
+										
+										<button type="button" class="btn btn-primary" data-dismiss="modal">Edit</button>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							
+							 
+							</form>
+						
+						</div>
+						
+						<div class="col-md-4">
+
+							<form>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Division</label>
+									<input type="text" class="form-control input-sm" id="" placeholder="Division">
+
+									<br />
+									<select class="form-control input-sm">
+										<option>Sylhet</option>
+										<option>Dhaka</option>
+									</select>
+								</div>
+
+							<button type="button"  class="btn btn-primary btn-sm"> Save  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+							
+							<br /> 
+							<hr />
+								<table class="table table-hover">
+										<!-- On table  -->
+										<tr class=".table-condensed">
+										  <td class="danger">Division Name </td>
+										  
+										  <td class="danger">Edit</td>
+										  
+										  <td class="danger">Delete</td>
+										</tr>
+										
+										<tr>
+										  <td class="active">Sylhet</td>
+										  
+										  <td class="active"><button type="button"  class="btn btn-warning btn-sm col-md-offset-1" data-toggle="modal" data-target="#Division-edit" data-whatever="@mdo"> Edit  <span class="glyphicon glyphicon-cog" aria-hidden="true"></span></button></td>
+										  <td class="active"><button type="button"  class="btn btn-danger btn-sm col-md-offset-1">Delete  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
+										</tr>								
+								</table>
+							
+							
+							
+				
+							
+								
+								<div class="modal fade" id="Division-edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+								  <div class="modal-dialog" role="document">
+									<div class="modal-content">
+									  <div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="exampleModalLabel">Edit Here</h4>
+									  </div>
+									  <div class="modal-body">
+										<form>
+										  <div class="form-group">
+											<label for="recipient-name" class="control-label">Division :</label>
+											<input type="text" class="form-control" id="Division-name">
+										  </div>
+										  
+										</form>
+									  </div>
+									  <div class="modal-footer">
+										
+										<button type="button" class="btn btn-primary" data-dismiss="modal">Edit</button>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							
+							</form>									
+						</div>
+						
+						<div class="col-md-4">
+							<form>
+								<div class="form-group">
+									<label for="exampleInputEmail1">District</label>
+									<input type="email" class="form-control input-sm" id="" placeholder="District">
+
+									<br />
+									<select class="form-control input-sm">
+										<option>Sylhet</option>
+										<option>Dhaka</option>
+									</select>
+								</div>
+
+							<button type="button"  class="btn btn-primary btn-sm"> Save  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
+							
+							<br /> 
+							<hr />
+								<table class="table table-hover">
+										<!-- On table  -->
+										<tr class=".table-condensed">
+										  <td class="danger">District Name </td>
+										  
+										  <td class="danger">Edit</td>
+										  
+										  <td class="danger">Delete</td>
+										</tr>
+										
+										<tr>
+										  <td class="active">Sylhet</td>
+										  
+										  <td class="active"><button type="button"  class="btn btn-warning btn-sm col-md-offset-1" data-toggle="modal" data-target="#District-edit" data-whatever="@mdo"> Edit  <span class="glyphicon glyphicon-cog" aria-hidden="true"></span></button></td>
+										  <td class="active"><button type="button"  class="btn btn-danger btn-sm col-md-offset-1">Delete  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
+										</tr>								
+								</table>
+							
+							
+							
+							
+							
+
+								<div class="modal fade" id="District-edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+								  <div class="modal-dialog" role="document">
+									<div class="modal-content">
+									  <div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="exampleModalLabel">Edit Here</h4>
+									  </div>
+									  <div class="modal-body">
+										<form>
+										  <div class="form-group">
+											<label for="recipient-name" class="control-label">District :</label>
+											<input type="text" class="form-control" id="District-name">
+										  </div>
+										  
+										</form>
+									  </div>
+									  <div class="modal-footer">
+										
+										<button type="button" class="btn btn-primary" data-dismiss="modal">Edit</button>
+									  </div>
+									</div>
+								  </div>
+								</div>
+							
+							
+							
+							</form>									
+						</div>
+					
+					
+					</div>
+					
+					
+
+
+					
+					
+					
+					
+				 </div>
+
+				
+				</div>
+				
+				
+				
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+   
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
+	
